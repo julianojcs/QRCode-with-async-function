@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="QRCode">
+        <meta name="author" content="Juliano Costa Silva">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>QRCode</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="size">
+            <label for="width">Size: </label><input type="range" id="size" min="50" max="500" value="100">
+            <input type="number" id="size2" min="50" max="500" step="10" value="100">
+        </div>
+        <div class="colors">
+            <label for="bgcolor">Background Color: </label><input type="color" id="bgcolor" value="#000000">
+            <label for="color">Color: </label><input type="color" id="color" value="#FFFFFF">
+        </div>
+        <div class="actions">
+            <label for="url">URL: </label>
+            <input type="text" id="url" value="http://www.google.com">
+            <button id="btnQRC">Create QRCode!!</button>
+        </div>
+        <div><a download="qrcode.png" id="download">Download QRCode Now!!!</a></div>
+        <div id="qrc"></div>
+
+        <!-- <p id="demo">Clique no botão para receber sua localização em Latitude e Longitude:</p>
+        <button id="btnGetLocation">Clique Aqui</button> -->
+
+        <script type="text/javascript">
+
+        </script>
+
+        <script type="text/javascript" src="davidshimjs-qrcodejs/qrcode.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html

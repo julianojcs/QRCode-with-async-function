@@ -1,0 +1,47 @@
+* + * {
+    margin: 3px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img[alt="Scan me!"], #qrc {
+    display: inline !important;
+}
+img[alt="Scan me!"] {
+    width: inherit !important;
+    height: inherit !important;
+}
+.size input, .colors input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+}
+button{
+    cursor: pointer;
+}
+.actions button, .actions input {
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#qrc:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 1.9);
+    border: 0px solid #000;
+    margin: 10px;
+    transition: box-shadow .3s ease-in-out, 
+                        margin .3s ease-in-out, 
+                        border .3s ease-in-out;
+}
